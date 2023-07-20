@@ -17,6 +17,6 @@ $ colcon build
 ```shell
 $ ros2 launch yolov8_bringup yolov8.launch.py
 ```
-```
-Thanks to [mgonzs13](https://github.com/mgonzs13/yolov8_ros)
+
+## Thanks to [mgonzs13](https://github.com/mgonzs13/yolov8_ros)
 
