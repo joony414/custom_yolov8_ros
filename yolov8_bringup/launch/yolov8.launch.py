@@ -28,7 +28,7 @@ def generate_launch_description():
     model = LaunchConfiguration("model")
     model_cmd = DeclareLaunchArgument(
         "model",
-        default_value="yolov8m.pt",
+        default_value="/home/jc/Codes/Python/yolov8-test/YOLOv8m.engine",
         description="Model name or path")
 
     tracker = LaunchConfiguration("tracker")
@@ -58,7 +58,7 @@ def generate_launch_description():
     input_image_topic = LaunchConfiguration("input_image_topic")
     input_image_topic_cmd = DeclareLaunchArgument(
         "input_image_topic",
-        default_value="/camera/rgb/image_raw",
+        default_value="/zed2/zed_cvt_node/zed_image_3ch",
         description="Name of the input image topic")
 
     namespace = LaunchConfiguration("namespace")
