@@ -5,10 +5,10 @@ ROS 2 wrap for [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) 
 
 ## Installation
 ```shell
-$ cd ~/your workspace/src
+$ cd ~/your_workspace/src
 $ git clone https://github.com/mgonzs13/yolov8_ros.git
 $ pip3 install -r yolov8_ros/requirements.txt
-$ cd ~/your workspace
+$ cd ~/your_workspace
 $ rosdep install --from-paths src --ignore-src -r -y
 $ colcon build
 ```
