@@ -9,10 +9,10 @@ from rclpy.node import Node
 from cv_bridge import CvBridge
 
 from ultralytics import YOLO
-from ultralytics.tracker import BOTSORT, BYTETracker
-from ultralytics.tracker.trackers.basetrack import BaseTrack
-from ultralytics.yolo.utils import IterableSimpleNamespace, yaml_load
-from ultralytics.yolo.utils.checks import check_requirements, check_yaml
+from ultralytics.trackers import BOTSORT, BYTETracker
+from ultralytics.trackers.basetrack import BaseTrack
+from ultralytics.utils import IterableSimpleNamespace, yaml_load
+from ultralytics.utils.checks import check_requirements, check_yaml
 
 from sensor_msgs.msg import Image
 from vision_msgs.msg import Detection2D
@@ -46,7 +46,7 @@ class Yolov8Node(Node):
         self._class_to_color = {}
         self.cv_bridge = CvBridge()
         self.tracker = self.create_tracker(tracker)
-        self.yolo = YOLO(model)
+        self.yolo = YOLO(model, task='detect')
         if model[-2:] == "pt":
             self.yolo.fuse()
             self.yolo.to(device)
