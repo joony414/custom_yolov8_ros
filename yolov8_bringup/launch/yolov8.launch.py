@@ -64,7 +64,7 @@ def generate_launch_description():
     namespace = LaunchConfiguration("namespace")
     namespace_cmd = DeclareLaunchArgument(
         "namespace",
-        default_value="yolo",
+        default_value="",
         description="Namespace for the nodes")
 
     #
