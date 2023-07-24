@@ -6,7 +6,7 @@ ROS 2 wrap for [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) 
 ## Installation
 ```shell
 $ cd ~/your_workspace/src
-$ git clone https://github.com/mgonzs13/yolov8_ros.git
+$ git clone https://github.com/joony414/custom_yolov8_ros.git
 $ pip3 install -r yolov8_ros/requirements.txt
 $ cd ~/your_workspace
 $ rosdep install --from-paths src --ignore-src -r -y
