@@ -28,7 +28,7 @@ def generate_launch_description():
     model = LaunchConfiguration("model")
     model_cmd = DeclareLaunchArgument(
         "model",
-        default_value="/home/jc/Codes/Python/yolov8-test/YOLOv8m.engine",
+        default_value="/home/soar/soar_ws/YOLOv8m.engine",
         description="Model name or path")
 
     tracker = LaunchConfiguration("tracker")
